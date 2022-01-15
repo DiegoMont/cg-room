@@ -12,11 +12,16 @@ La idea es que nosotros utilicemos assets para algunos de los objetos del cuarto
 
 Incluimos dos ejemplos para evocar nuestra idea:
 
+- Ejemplo 1
 <img src='./media/ex-1.jpg'/>
 
+- Ejemplo 2
 <img src='./media/ex-2.jpg'/>
 
+
+## Características de la escena
+
 Para la animación de nuestra escena estamos contemplando varios escenarios:
-- La interactividad del usuario al apretar teclas; con las cuales puede hacer que nuestro programador protagonista en la escena haga un movimiento de programar en el teclado;
-- Un movimiento del sol o la luna a través del ventanal del cuarto, con lo cual habría un juego de sombras y de luces.
+- **Interactividad**: queremos que la escena sea interactiva; por lo que nuestra idea es que usuario al apretar teclas pueda hacer que nuestro programador protagonista en la escena haga un movimiento de programar en el teclado.
+- **Sombras y luces** Para jugar con el sombreado estamos contemplando usar múltiples luces en el cuarto incluyendo las de la pantalla (sería un cuarto principalemnte oscuro), o también el movimiento del sol o la luna a través del ventanal del cuarto, con lo cual habría un juego de sombras y de luces.
 
