@@ -4,7 +4,7 @@ Final project for Computer Graphics Course
 - Diego Montaño Martínez A01651308
 - Eric Andrés Jardón Chao A01376748
 
-**Descripción:** Éscogimos para nuestra escena la popular imagen de un programador en su cuarto escuchando música y en un momento de completa concentración.
+**Descripción:** Escogimos para nuestra escena la popular imagen de un programador en su cuarto escuchando música y en un momento de completa concentración.
 
 ### Inspiración
 Nos inspiramos en los típicos canales de youtube de música Hip Hop y Lo Fi donde es una playlist larga con un artwork de un programador en su oficina o cuarto. 
