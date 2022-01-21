@@ -24,7 +24,7 @@ public class Daytime : MonoBehaviour
         UpdateLights();
 
         // Move our directional light
-        rotationSpeed = 360.0f / (minutesInDay * 6.0f) * Time.deltaTime;
+        rotationSpeed = 360.0f / (minutesInDay * 60.0f) * Time.deltaTime;
         transform.RotateAround(transform.position, transform.right, rotationSpeed);
 
         // Debug.Log(dayPercentage);
