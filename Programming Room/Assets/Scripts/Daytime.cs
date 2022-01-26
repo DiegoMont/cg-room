@@ -10,10 +10,12 @@ public class Daytime : MonoBehaviour
     float timer;
     float dayPercentage;
     float rotationSpeed;
+    float intensityDelta = 0.05f;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Rising sun is 0% of day
         timer = 0.0f;
     }
 
@@ -27,27 +29,30 @@ public class Daytime : MonoBehaviour
         rotationSpeed = 360.0f / (minutesInDay * 60.0f) * Time.deltaTime;
         transform.RotateAround(transform.position, transform.right, rotationSpeed);
 
-        // Debug.Log(dayPercentage);
     }
 
     void UpdateLights() {
         // Intensity decreases after midday
         Light l = GetComponent<Light> ();
+
         if (isNight()) {
+            // start decreasing sunlight while intensity is > 0.0f
             if (l.intensity > 0.0f) {
-                l.intensity -= 0.05f;
+                l.intensity -= intensityDelta;
             }
-        }
-        // Intensity increases after midnight
-        else {
+        } else {
             if (l.intensity < 1.0f) {
-                l.intensity += 0.05f;
+                l.intensity += intensityDelta;
             }
         }
+        
+        Debug.Log(dayPercentage);
+        Debug.Log(l.intensity);
+
     }
 
     bool isNight() {
-        return dayPercentage > 0.5f;
+        return dayPercentage > 0.45;
     }
 
     void checkTime() {
