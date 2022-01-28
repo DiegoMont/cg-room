@@ -2,60 +2,72 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+
+*/
+
 public class Daytime : MonoBehaviour
 {
 
     public float minutesInDay = 1.0f;
-
     float timer;
     float dayPercentage;
     float rotationSpeed;
+    float intensityDelta = 0.05f;
 
-    // Start is called before the first frame update
     void Start()
     {
-        timer = 0.0f;
+        // Amanecer representa 0% del día
+        timer = 0.0f;  // para trackear la duración del día
     }
 
-    // Update is called once per frame
     void Update()
     {
-        checkTime();
-        UpdateLights();
+        if (Input.GetKey("space"))
+        {
+            UpdateTime();  // actualiza el avance del día
+            UpdateLights();  // actualizar la intensidad de la luz según se acerca el atardecer o el amanecer
 
-        // Move our directional light
-        rotationSpeed = 360.0f / (minutesInDay * 6.0f) * Time.deltaTime;
-        transform.RotateAround(transform.position, transform.right, rotationSpeed);
+            // Mover la Directional Light en órbita (360 grados)
+            rotationSpeed = 360.0f / (minutesInDay * 60.0f) * Time.deltaTime;
+            transform.RotateAround(transform.position, transform.right, rotationSpeed);
+        }
 
-        // Debug.Log(dayPercentage);
     }
 
     void UpdateLights() {
-        // Intensity decreases after midday
         Light l = GetComponent<Light> ();
+
+        // Atardecer
         if (isNight()) {
+            // Reducir intensidad del día hasta que llegue a 0.0
             if (l.intensity > 0.0f) {
-                l.intensity -= 0.05f;
+                l.intensity -= intensityDelta;
             }
-        }
-        // Intensity increases after midnight
-        else {
+        // Amanecer
+        } else {
+            // Incrementar intensidad del día hasta regresar a 1.0
             if (l.intensity < 1.0f) {
-                l.intensity += 0.05f;
+                l.intensity += intensityDelta;
             }
         }
+        
+
     }
 
     bool isNight() {
-        return dayPercentage > 0.5f;
+        // Queremos que empiece a anochecer cuando ha tenido 45% de avance el día
+        return dayPercentage > 0.45;
     }
 
-    void checkTime() {
-        // call this in the update method
+    void UpdateTime() {
+        // Actualizar el avance porcentual del día
+        // de acuerdo al tiempo transcurrido
         timer += Time.deltaTime;
         dayPercentage = timer / (minutesInDay * 60.0f);
         
-        // Restart after day ends
+        // Reiniciar el día cuando llegamos al 100%
         if (timer > (minutesInDay * 60.0f)) {
             timer = 0.0f;
         }
