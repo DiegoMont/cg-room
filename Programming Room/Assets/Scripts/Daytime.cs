@@ -15,6 +15,9 @@ public class Daytime : MonoBehaviour
     float dayPercentage;
     float rotationSpeed;
     float intensityDelta = 0.05f;
+    int index = -1;
+
+    public List<Material> skyboxes;  // guarda los Material para distintos colores de skybox y teñir el cielo
 
     void Start()
     {
@@ -32,6 +35,13 @@ public class Daytime : MonoBehaviour
             // Mover la Directional Light en órbita (360 grados)
             rotationSpeed = 360.0f / (minutesInDay * 60.0f) * Time.deltaTime;
             transform.RotateAround(transform.position, transform.right, rotationSpeed);
+        }
+
+        // Si el usuario presiona A, cambiar el material de Skybox
+        if (Input.GetKeyDown(KeyCode.A)){
+            index = (index + 1)%skyboxes.Count;
+            Debug.Log(index);
+            RenderSettings.skybox = skyboxes[index];
         }
 
     }
