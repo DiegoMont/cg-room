@@ -32,7 +32,7 @@ Incluimos dos ejemplos para evocar nuestra idea:
 
 - **Sombras**: Para el juego de sombras hay múltiples luces en la escena incluyendo la de la pantalla, así como el movimiento del sol y la luna a través del ventanal del cuarto. Es posible observar sombras en todos los objetos. Vale la pena prestar atención a la sombra que producen las hojas de la planta.
 
-- **Objetos propios**: Los siguientes objetos en la escena fueron creados por los miembros del equipo utilizando las formas básicas de Unity. Mesa de trabajo, silla, edificios, lámpara.
+- **Objetos propios**: Los siguientes objetos en la escena fueron creados por los miembros del equipo utilizando las formas básicas de Unity. Mesa de trabajo, silla, edificios, lámpara, equipo de cómputo.
 
 - **Créditos**: El resto de los objetos de la escena, incluidos sus materiales, texturas, así como el personaje y su animación fueron recuperados de diversas fuentes incluyendo la tienda de assets de Unity. Los créditos respectivos son para sus creadores que podrán ser consultados en la sección de referencias.
 
