@@ -38,9 +38,13 @@ Incluimos dos ejemplos para evocar nuestra idea:
 
 ## Referencias
 
+- Killian Eng. (2018). 2001: A Space Odyssey by Kilian Eng. Recuperado de: https://alternativemovieposters.com/amp/2001-space-odyssey-kilian-eng/
+
 - Mixamo. (2022). Mixamo Characters. Recuperado de: https://www.mixamo.com/#/?page=2&type=Character
 
 - Mixamo. (2022). Mixamo Motion Pack. Recuperado de: https://www.mixamo.com/#/?page=1&type=Motion%2CMotionPack
+
+- Unifrance (s.f.). The Fantastic Planet. Recuperado de: https://en.unifrance.org/movie/10011/the-fantastic-planet 
 
 - Unity Asset Store. (2022). Office Room Furniture. Recuperado de: https://assetstore.unity.com/packages/3d/props/furniture/office-room-furniture-70884
 
