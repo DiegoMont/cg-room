@@ -1,12 +1,15 @@
 # Scene: Coding Night
-Final project for Computer Graphics Course
+<img src='./media/sample.jpg'/>
+Presiona la tecla de espacio en tu teclado para que transcurra el día y la noche. Observa cómo la luz afecta los diferentes objetos en el cuarto conforme pasa el día. :sunny: :crescent_moon:
+
+## Final project for Computer Graphics Course
 - Carlos Andrés Conde Besil A01650549
 - Diego Montaño Martínez A01651308
 - Eric Andrés Jardón Chao A01376748
 
 **Descripción:** Escogimos para nuestra escena la popular imagen de un programador en su cuarto, tranajando en un momento de completa concentración.
 
-### Inspiración
+## Inspiración
 Nos inspiramos en los típicos canales de youtube de música Hip Hop y Lo Fi donde es una playlist larga con un artwork de un programador en su oficina o cuarto. 
 
 La idea es que nosotros utilicemos assets para algunos de los objetos del cuarto (posters, computadora, caja de pizza, asiento, entre otros), y nos dediquemos a modelar el resto (e.g. el programador, la computadora, otros detalles).
