@@ -25,7 +25,7 @@ Incluimos dos ejemplos para evocar nuestra idea:
 
 - **Animación**: el protagonista de la escena, el programador, se encuentra sentado frente a su equipo de cómputo. Hace continuamente un movimiento de escritura en el teclado, que se complementa con una sutil inclinación en la cabeza y pies. 
 
-- **Interactividad**: día y noche pasan, nuestro protagonista no deja de trabajar. Por el ventanal entra la luz exterior, es posible ver el amanecer, el atardecer y el anochecer. Entre los edificios pasará el sol y la luna. Basta con que el usuario presione la barra espaciadora para avanzar en el tiempo.
+- **Interactividad**: día y noche pasan, nuestro protagonista no deja de trabajar. Por el ventanal entra la luz exterior, es posible ver el amanecer, el atardecer y el anochecer. Entre los edificios pasará el sol y la luna. Basta con que el usuario presione la barra espaciadora para avanzar en el tiempo. El usuario también puede cambiar la tonalidad del cielo entre azul, naranja y púrpura, apretando la tecla `A`.
 
 - **Sombras**: Para el juego de sombras hay múltiples luces en la escena incluyendo la de la pantalla, así como el movimiento del sol y la luna a través del ventanal del cuarto. Es posible observar sombras en todos los objetos. Vale la pena prestar atención a la sombra que producen las hojas de la planta.
 
