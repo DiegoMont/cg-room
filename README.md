@@ -1,4 +1,7 @@
 # Scene: Coding Night
+<img src='./media/sample.jpg'/>
+Presiona la tecla de espacio en tu teclado para que transcurra el día y la noche. Observa cómo la luz afecta los diferentes objetos en el cuarto conforme pasa el día. :sunny: :crescent_moon:
+
 Final project for Computer Graphics Course
 - Carlos Andrés Conde Besil A01650549
 - Diego Montaño Martínez A01651308
